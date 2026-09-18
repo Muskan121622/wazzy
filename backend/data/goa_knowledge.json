@@ -1,0 +1,21 @@
+{
+  "host_recommendations": [
+    {
+      "host_name": "Rahul & Priya (Wayzyy Superhosts)",
+      "property": "Sunset 2BHK Retreat, Baga",
+      "recommended_place_id": "place_3",
+      "host_quote": "For the best Goan Fish Curry Rice near your stay, skip the tourist stalls and head straight to Souza Lobo. Ask for the catch of the day!"
+    },
+    {
+      "host_name": "Rahul & Priya (Wayzyy Superhosts)",
+      "property": "Sunset 2BHK Retreat, Baga",
+      "recommended_place_id": "place_10",
+      "host_quote": "If it starts raining, my personal favorite spot is the Assagao Bakery cafe — best almond croissants and quiet wifi!"
+    }
+  ],
+  "local_tips": [
+    "Rainy afternoons in Goa are best spent exploring Fontainhas Latin Quarter or visiting spice plantations.",
+    "Baga Beach can get crowded between 4 PM and 7 PM; visit Quiet Vagator or Morjim for peaceful sunset views.",
+    "Renting a local scooter or using GoaMiles app is the most cost-effective local transport."
+  ]
+}
