@@ -358,7 +358,7 @@ def _load_search_memory(trip_id: str) -> str:
 # ─────────────────────────────────────────────────────────────
 def _call_groq(messages, tools=None, tool_choice="auto", temperature=0.5, max_tokens=600):
     payload = {
-        "model": "qwen/qwen3.8-27b",
+        "model": "llama-3.1-70b-versatile",
         "messages": messages,
         "temperature": temperature,
         "max_tokens": max_tokens

@@ -101,15 +101,15 @@ export default function ConciergePage() {
     recognition.onend = () => setIsListening(false);
   };
 
-  const fetchTrip = async () => {
+  const fetchTrip = async (silent = false) => {
     try {
-      setLoading(true);
+      if (!silent) setLoading(true);
       const data = await api.getTrip('trip_1');
       setTripData(data);
     } catch (err) {
       console.error('Failed to load trip', err);
     } finally {
-      setLoading(false);
+      if (!silent) setLoading(false);
     }
   };
 
@@ -261,7 +261,7 @@ export default function ConciergePage() {
           tool: res.tool_executed ? { name: res.tool_executed, args: res.tool_args } : null,
         },
       ]);
-      fetchTrip(); // Refresh if itinerary changed!
+      fetchTrip(true); // Silent refresh if itinerary changed!
     } catch (err) {
       setChatMessages((prev) => [
         ...prev,
